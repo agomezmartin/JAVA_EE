@@ -1,0 +1,93 @@
+package repaso;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import model.Ciudad;
+
+/*
+ * Realizar TRES métodos:
+ * 
+ * 1. Recibe una LISTA DE CIUDADES y devuelve la ciudad más calurosa.
+ * 
+ * 2. Recibe una LISTA DE CIUDADES y una TEMPERATURA.
+ * Devuelve un CONJUNTO con las ciudades cuya temperatura sea inferior a dicho parámetro.
+ * 
+ * 3. recibe una LISTA DE CIUDADES. Devuelve la TEMPERATURA MEDIA.
+ * 
+ * Una CIUDAD es un JavaBean que ENCAPSULA el NOMBRE y TEMPERATURA de una ciudad.
+ * 
+ * 
+ */
+
+public class EjercicioCiudades {
+
+	public static void main(String[] args) {
+		
+		List<Ciudad> lista = new ArrayList<>();
+		lista.add("Sevilla", 40.5);
+		lista.add("Santander");
+		lista.add("Bilbao");
+		lista.add("Albacete");
+		lista.add("Mérida");
+
+
+	} // cierre MAIN
+	
+	// ciudad más calurosa
+	// 1. Recibe una LISTA DE CIUDADES y devuelve la ciudad más calurosa.
+	
+	public static Ciudad ciudadCalurosa(List<Ciudad> lst) {
+		
+		Ciudad ciudadMax = null;
+		double tempMax;
+		
+		for(Ciudad ciudad:lst) {
+			
+			if(ciudad.getTemperatura()>tempMax) {
+				
+			}
+
+		}
+		
+		
+		
+		
+		return ciudad;
+	}
+
+	// CONJUNTO de ciudades cuya etmperatura es menor que el parámetro
+	// 2. Recibe una LISTA DE CIUDADES y una TEMPERATURA.
+	// Devuelve un CONJUNTO con las ciudades cuya temperatura sea inferior a dicho parámetro.
+
+	private static Set<Ciudad> conjuntoCiudades(List<String> lst, double temp) {
+		
+		HashSet<Ciudad> conjunto = HashSet<>();
+
+		
+		
+		return conjunto;
+	}
+	
+	// ciudad más calurosa
+	// 3. recibe una LISTA DE CIUDADES. Devuelve la TEMPERATURA MEDIA.
+
+	public double temperaturaMedia(List<String> lst) {
+		
+		return lst.stream()
+				.mapToDouble(c -> c.get);
+	}
+	
+	public Ciudad ciudadPorNombre(List<Ciudad> lst, String nombre) {
+		
+		return lst.stream()
+				.filter(c -> c.getNombre().equals(nombre))
+				.findFirst()
+				.orElse(null)
+				;
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+1665743036839	Delete element
+1665743048624	Copy package
+1665743056014	Delete element
+1665743181257	Rename resource 'alta.html'
+1665743188988	Rename resource 'altaPagina.html'
+1665743200715	Rename resource 'datos.html'
+1665743210952	Rename resource 'eliminar.html'
+1665743223441	Rename resource 'modificar.html'
+1665743233946	Rename resource 'inicio.html'
+1665743406304	Rename type 'ProductosService'
+1665743821224	Delete element
+1665743861591	Extract interface 'ProductosService'
+1665744067312	Rename type 'BuscadorController'

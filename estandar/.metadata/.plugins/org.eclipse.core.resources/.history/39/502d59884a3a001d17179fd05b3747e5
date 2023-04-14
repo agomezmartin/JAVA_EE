@@ -1,0 +1,12 @@
+package pruebas;
+
+public class TestPredicate {
+
+	public static void main(String[] args) {
+		
+		Predicate<Double> ciudad
+
+
+	} // cierre MAIN
+
+}

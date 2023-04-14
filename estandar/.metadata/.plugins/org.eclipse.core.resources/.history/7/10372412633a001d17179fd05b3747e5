@@ -1,0 +1,24 @@
+package pruebas;
+
+import java.util.List;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+		
+		List<Integer> nums = List.of(9,-4,11,3,2,-6,2,5,8,17,11,1,-5);
+		
+		// ¿Hay algún número NEGATIVO?
+		System.out.println( "¿Hay algún número NEGATIVO?");
+				
+				nums.stream() // conversión de la LISTA a STREAM
+				
+				// métodos INTERMEDIOS
+
+				
+				// método FINAL
+
+
+	} // cierre MAIN
+
+}

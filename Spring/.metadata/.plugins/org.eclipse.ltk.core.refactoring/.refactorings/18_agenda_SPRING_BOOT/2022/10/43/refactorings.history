@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;application.properties&apos; to &apos;19_cajero_SPRING_BOOT/src/main/resources&apos;&#x0A;- Original project: &apos;18_agenda_SPRING_BOOT&apos;&#x0A;- Destination element: &apos;19_cajero_SPRING_BOOT/src/main/resources&apos;&#x0A;- Original element: &apos;application.properties&apos;" description="Copy file" destination="=19_cajero_SPRING_BOOT/src\/main\/resources=/maven.pomderived=/true=/" element1="src/main/resources/application.properties" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1666685884120" units="0" version="1.0"/>
+</session>

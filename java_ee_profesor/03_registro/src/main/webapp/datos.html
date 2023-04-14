@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<center>
+	<h1>Página de registro</h1>
+	<form action="Registro" method="GET">
+		Nombre:<input type="text" name="nombre"><br>
+		Email:<input type="text" name="email"><br>
+		Edad:<input type="number" name="edad"><br>
+		Sexo:
+			<input type="radio" value="Sr." name="sexo">H<br>
+			<input type="radio" value="Sra." name="sexo">M<br>
+		Preferencias:
+			<!--  
+			<select name="prefes">
+				<option value="deportes">Deportes</option>
+				<option value="música">Música</option>
+				<option value="juegos">Juegos</option>
+			</select>
+			-->
+			<input type="checkbox" value="deportes" name="prefes"><span>Deportes</span><br>
+			<input type="checkbox" value="música" name="prefes">Música<br>
+			<input type="checkbox" value="juegos" name="prefes">Juegos<br>
+		<input type="submit" value="Enviar">
+	</form>
+	</center>
+</body>
+</html>

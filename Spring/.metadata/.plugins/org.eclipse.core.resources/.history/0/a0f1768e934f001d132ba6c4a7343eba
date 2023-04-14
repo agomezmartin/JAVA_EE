@@ -1,0 +1,17 @@
+package service;
+
+import lombok.Data;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
+
+public class Contacto {
+	
+	private int idContacto;
+	private String nombre;
+	private String email;
+	private int telefono;
+
+}

@@ -1,0 +1,13 @@
+package service;
+
+public class ContactosServiceImpl {
+	
+	List<Contacto> lista = ArrayList<Contacto>();
+	
+	public List<Contacto> contactosEdadesMax(int edad){
+		
+	}
+	
+	
+
+}

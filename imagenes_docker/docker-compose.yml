@@ -1,0 +1,21 @@
+version: "2"
+services:
+  s1:
+    build: ./servicio_productos
+    ports:
+    - 8000:8000
+    environment:
+    - HOST=192.168.0.17  #dirección del host que aloja el contenedor
+    - SERVER_DB=192.168.0.17
+    - SERVER_EUREKA=192.168.0.17
+    - PORT_DB=3307
+  s2:
+    build: ./servicio_pedidos
+    ports:
+    - 7000:7000
+    environment:
+    - HOST=192.168.0.17  #dirección del host que aloja el contenedor
+    - SERVER_DB=192.168.0.17
+    - SERVER_EUREKA=192.168.0.17
+    - PORT_DB=3307
+  

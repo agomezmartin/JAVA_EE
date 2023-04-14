@@ -1,0 +1,4 @@
+127.0.0.1 - - [14/Oct/2022:09:49:31 +0200] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [14/Oct/2022:09:49:31 +0200] "GET /24_libreria_virtual_v2/ HTTP/1.1" 200 481
+0:0:0:0:0:0:0:1 - - [14/Oct/2022:09:49:32 +0200] "GET /favicon.ico HTTP/1.1" 404 698
+0:0:0:0:0:0:0:1 - - [14/Oct/2022:09:49:51 +0200] "GET /24_libreria_virtual_v2/Controller?option=toRegistro HTTP/1.1" 404 724

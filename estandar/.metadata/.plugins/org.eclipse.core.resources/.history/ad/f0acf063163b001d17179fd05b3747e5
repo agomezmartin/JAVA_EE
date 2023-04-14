@@ -1,0 +1,31 @@
+package pruebas;
+
+import java.util.List;
+
+public class Test8 {
+
+	public static void main(String[] args) {
+		
+		List<String> nombres = List.of("cadena","luz","día","meteoro","bicicleta");
+		
+		// mostrar la lista de nombres ordenados alfabéticamente
+		System.out.println("Ciudades ordenadas alfabéticamente:");
+		nombres.stream()
+		.sorted()
+		.forEach(n -> System.out.println(n));
+		System.err.println();
+		
+		// mostrar nombres ordenados de menor a mayor número de caracteres
+		System.out.println("Ciudades ordenadas por número de caracteres:");
+		nombres.stream()
+		.sorted((a,b) -> a.length() - b.length())
+		.forEach(c -> System.out.println(c));
+
+
+
+		System.err.println();
+		
+
+	} // cierre MAIN
+
+}

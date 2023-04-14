@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:11_ejemplo_JSP" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:16_Tienda_productos_TRES_CAPAS_Y_JSP_SESION" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:18_likes_ATRIBUTO_DE_APLICACIÓN" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:06_Colorear_Página_PARÁMETRO_ENLACE" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:21_Gestion_Contactos_MYSQL" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:13_tabla_multiplicar_JSP" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:15_Tienda_productos_TRES_CAPAS_JSP" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:19_Tienda_productos_COOKIES" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:17_carrito" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:24_libreria_virtual_v2" serverId="apache-tomcat-9.0.62 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:05_Buscador_TERMINAR" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:02_nombres" serverId="apache-tomcat-9.0.62 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:03_Registro" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:23_Libreria_Virtual_v1_MVC_y_Base_de_datos" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:11_ejemplo_jsp" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:20_Alberto_Test" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:15_Tienda_productos_TRES_CAPAS_Y_JSP" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:01_ejemplo_saludo_SERVLET" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:14_validacion_ficha_ATRIBUTOS_JSP" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:07_Validación_transferencia" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:09_Buscador_TRANSFE_ATRIBUTOS" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:22_Gestion_Contactos_MVC" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:04_Deberes" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:20_Ejemplo_BD" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:01_ejemplo_saludo" serverId="apache-tomcat-9.0.62 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:12_tabla_multiplicar_JSP" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:08_validacion_ficha_ATRIBUTOS" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:02_Nombres" serverId="Tomcat v9.0 Server at localhost"/>
+</modules>

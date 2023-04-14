@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="12_Practica_Banca"/>
+			<item value="07_test"/>
+			<item value="05_libreria_virtual"/>
+			<item value="04_gestion_contactos_MVC_JDBC"/>
+			<item value="03_tienda_productos_combinada"/>
+			<item value="02_buscador_completo"/>
+			<item value="01_buscador_basico"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="12_Practica_Banca"/>
+			<item value="07_test"/>
+			<item value="05_libreria_virtual"/>
+			<item value="04_gestion_contactos_MVC_JDBC"/>
+			<item value="03_tienda_productos_combinada"/>
+			<item value="02_buscador_completo"/>
+			<item value="01_buscador_basico"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

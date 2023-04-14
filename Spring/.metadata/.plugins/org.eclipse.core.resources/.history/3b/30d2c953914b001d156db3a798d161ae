@@ -1,0 +1,16 @@
+package controller;
+
+//importar el controlador de Spring
+import org.springframework.stereotype.Controller;
+
+//Anotar e importar el controlador de Spring
+@Controller
+public class BuscadorController {
+	
+	// insertar un OBJETO de la capa SERVICE
+	
+	// método para buscar
+	public String buscar(String tema) {
+		
+	}
+}

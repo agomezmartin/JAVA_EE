@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+/Users/albertogomez-martin/Documents/Core_Networks/curso_aplicaciones_empresariales_javaee_sep_2022/ejercicios/java_spring_profesor/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/315443214.index
+/01_buscador_basico/src/main/java
+/Users/albertogomez-martin/Documents/Core_Networks/curso_aplicaciones_empresariales_javaee_sep_2022/ejercicios/java_spring_profesor/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1591679736.index
+/02_buscador_completo/src/main/java

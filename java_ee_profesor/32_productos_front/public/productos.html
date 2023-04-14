@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var productos=[];
+	function guardar(){
+		var obj=new Object();
+		obj.producto=document.getElementById("producto").value;
+		obj.categoria=document.getElementById("categoria").value;
+		obj.precio=document.getElementById("precio").value;
+		productos.push(obj);
+	}
+	function mostrar(){
+		var tabla="<table border='1'><tr><th>Producto</th><th>Categoría</th><th>Precio</th></tr>";
+		for(var p of productos){
+			tabla+="<tr><td>"+p.producto+"</td><td>"+p.categoria+"</td><td>"+p.precio+"</td></tr>";
+		}
+		tabla+="</table>";
+		document.getElementById("prods").innerHTML=tabla;
+	}
+
+</script>
+</head>
+<body>
+	<center>
+			Producto:<input type="text" name="producto" id="producto"><br>
+			Categoría:<input type="text" name="categoria" id="categoria">&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="button" value="Guardar" onclick="guardar();"><br>
+			Precio:<input type="text" name="precio" id="precio"><br><br><br>
+			<input type="button" value="Productos" onclick="mostrar();">
+		<br><br>
+		<div id="prods">
+		
+		
+		</div>
+	</center>
+</body>
+</html>

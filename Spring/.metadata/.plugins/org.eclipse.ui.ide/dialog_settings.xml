@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/albertogomez-martin/Downloads/ejercicios_01_17"/>
+			<item value="/Users/albertogomez-martin/Downloads/12_cajero_jpa_profe"/>
+			<item value="/Users/albertogomez-martin/Downloads/11_agenda_contactos_dao"/>
+			<item value="/Users/albertogomez-martin/Downloads/ejercicios_1_10"/>
+			<item value="/Users/albertogomez-martin/Downloads/ejercicios_1_10/01_buscador_basico"/>
+			<item value="/Users/albertogomez-martin/Downloads/09_agenda_contactos_persistencia"/>
+			<item value="/Users/albertogomez-martin/Downloads/06_libreria_virtual_datasource_servidor"/>
+			<item value="/Users/albertogomez-martin/Downloads/05_libreria_virtual"/>
+			<item value="/Users/albertogomez-martin/Downloads/ejercicios_1_35/30_libreria_virtual_v3_datasource_EL"/>
+			<item value="/Users/albertogomez-martin/Downloads/04_agenda_contactos"/>
+			<item value="/Users/albertogomez-martin/Documents/Core_Networks/curso_aplicaciones_empresariales_javaee_sep_2022/ejercicios/java_ee/22_gestion_contactos_MVC"/>
+			<item value="/Users/albertogomez-martin/Documents/Core_Networks/curso_aplicaciones_empresariales_javaee_sep_2022/ejercicios/java_ee_profesor/15_tienda_productos_combinada"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+			<item value="/Users/albertogomez-martin/Documents/Core_Networks/curso_aplicaciones_empresariales_javaee_sep_2022/ejercicios/Spring/05_libreria_virtual/src/main/webapp/libros.jsp"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="TOGGLE_SELECTED" value="false"/>
+		<item key="DIALOG_WIDTH" value="541"/>
+		<item key="DIALOG_HEIGHT" value="364"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="381"/>
+		<item key="DIALOG_Y_ORIGIN" value="132"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+</section>

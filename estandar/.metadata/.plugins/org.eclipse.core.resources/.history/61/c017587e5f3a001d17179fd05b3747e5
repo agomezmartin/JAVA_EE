@@ -1,0 +1,23 @@
+package pruebas;
+
+import java.util.List;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		
+		List<Integer> nums = List.of(9,-4,11,3,2,-6,2,5,8,17,11,1,-5);
+		
+		// ¿Cuántos números ÚNICOS hay en la lista?
+		System.out.println(
+				
+				nums.stream() // convierto la LISTA a una STREAM
+				
+				.distinct() // busca los números ÚNICOS: método INTERMEDIO
+				.count() // CUENTA los números únicos: método FINAL
+				
+				);
+
+	} // cierre MAIN
+
+}

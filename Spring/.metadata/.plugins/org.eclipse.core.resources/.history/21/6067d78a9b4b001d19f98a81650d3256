@@ -1,0 +1,15 @@
+package model;
+
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+@data
+@NoArgsConstructor
+@AllArgsConstructor
+
+public class Pagina {
+
+	private String direccion;
+	private String tematica;
+	private String descripcion;
+}

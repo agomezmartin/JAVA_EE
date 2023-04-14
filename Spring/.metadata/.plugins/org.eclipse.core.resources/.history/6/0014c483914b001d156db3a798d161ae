@@ -1,0 +1,22 @@
+package controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+//importar el controlador de Spring
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import service.BuscadorService;
+
+//Anotar e importar el controlador de Spring
+@Controller
+public class BuscadorController {
+	
+	// inyectar un OBJETO de la capa SERVICE
+	@Autowired
+	BuscadorService buscadorService;
+	
+	// método para buscar
+	public String buscar(@RequestParam("tema") String tema) {
+		
+	}
+}

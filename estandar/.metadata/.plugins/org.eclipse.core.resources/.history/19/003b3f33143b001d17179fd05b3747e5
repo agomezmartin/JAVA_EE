@@ -1,0 +1,24 @@
+package pruebas;
+
+import java.util.List;
+
+public class Test7 {
+
+	public static void main(String[] args) {
+		
+		List<String> nombres = List.of("cadena","luz","día","meteoro","bicicleta");
+				
+				System.out.println("Convertir a mayúsculas todas las palabras: ");
+				System.out.println();
+					
+				// calcular la suma de todos los caracteres de la lista
+				nombres.stream() // conversión de la LISTA a STREAM
+					
+				.map(s -> s.toUpperCase())
+				.forEach(s -> System.out.println(s)
+
+				);
+
+	} // cierre MAIN
+
+}

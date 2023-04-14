@@ -1,0 +1,2 @@
+127.0.0.1 - - [15/Oct/2022:11:58:37 +0200] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [15/Oct/2022:11:58:39 +0200] "GET /01_ejemplo_saludo/WEB-INF/classes/servlets/Saludo.java HTTP/1.1" 404 610

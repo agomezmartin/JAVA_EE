@@ -1,0 +1,87 @@
+package repaso;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import model.Ciudad;
+
+/*
+ * Realizar TRES métodos:
+ * 
+ * 1. Recibe una LISTA DE CIUDADES y devuelve la ciudad más calurosa.
+ * 
+ * 2. Recibe una LISTA DE CIUDADES y una TEMPERATURA.
+ * Devuelve un CONJUNTO con las ciudades cuya temperatura sea inferior a dicho parámetro.
+ * 
+ * 3. recibe una LISTA DE CIUDADES. Devuelve la TEMPERATURA MEDIA.
+ * 
+ * Una CIUDAD es un JavaBean que ENCAPSULA el NOMBRE y TEMPERATURA de una ciudad.
+ * 
+ * 
+ */
+
+public class EjercicioCiudades {
+
+	public static void main(String[] args) {
+		
+		List<Ciudad> lista = new ArrayList<>();
+
+	} // cierre MAIN
+	
+	// ciudad más calurosa
+	// 1. Recibe una LISTA DE CIUDADES y devuelve la ciudad más calurosa.
+	
+	public static Ciudad ciudadCalurosa(List<Ciudad> lst) {
+		
+		return
+				lst.stream()
+				.max(Comparator.comparing(t -> t.))
+
+	}
+
+	// CONJUNTO de ciudades cuya etmperatura es menor que el parámetro
+	// 2. Recibe una LISTA DE CIUDADES y una TEMPERATURA.
+	// Devuelve un CONJUNTO con las ciudades cuya temperatura sea inferior a dicho parámetro.
+
+	private static Set<Ciudad> conjuntoCiudades(List<String> lst, double temp) {
+		
+		HashSet<Ciudad> conjunto = HashSet<>();
+
+		
+		
+		return conjunto;
+	}
+	
+	// ciudad más calurosa
+	// 3. recibe una LISTA DE CIUDADES. Devuelve la TEMPERATURA MEDIA.
+
+	public double temperaturaMedia(List<Ciudad> lst) {
+		
+		return lst.stream()
+				.mapToDouble(c -> c.getTemperatura())
+				
+
+	}
+	
+	public Ciudad ciudadPorNombre(List<Ciudad> lst, String nombre) {
+		
+		return lst.stream()
+				.filter(c -> c.getNombre().equals(nombre))
+				.findFirst()
+				.orElse(null)
+				;
+	}
+	
+	// mostrar los nombres de las ciudades ordenadas de menor a mayor TEMPERATURA
+	public void ordenarTemperatura(List<Ciudad> lst) {
+		
+		lst.stream()
+		.sorted(Comparator.comparingDouble(t -> t.getTemperatura()))
+		.forEach(c -> System.out.println(c));
+		
+	}
+
+}

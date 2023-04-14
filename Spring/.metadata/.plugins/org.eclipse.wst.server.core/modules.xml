@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:19_cajero_SPRING_BOOT" serverId="apache-tomcat-9.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:09_agenda_contactos_persistencia" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:20_cajero_SPRING_BOOT_Thymeleaf" serverId="apache-tomcat-9.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:04_gestion_contactos_MVC_JDBC" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:02_buscador_completo" serverId="apache-tomcat-9.0.62 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:21_libreria_SPRING_BOOT_Thymeleaf" serverId="apache-tomcat-9.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:03_tienda_productos" serverId="apache-tomcat-9.0.62 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:11_agenda_contactos_dao" serverId="apache-tomcat-9.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:13_libreria_virtual_ajax_persistencia" serverId="apache-tomcat-9.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:01_buscador_basico"/>
+  <module moduleId="org.eclipse.jst.jee.server:16_cajero_jpa_spring_data_jpa" serverId="apache-tomcat-9.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:10_libreria_virtual_ajax_persistencia" serverId="apache-tomcat-9.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:18_agenda_SPRING_BOOT" serverId="apache-tomcat-9.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:05_libreria_virtual" serverId="apache-tomcat-9.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:13_libreria_virtual_ajax_DAO" serverId="apache-tomcat-9.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:12_cajero_jpa_profe" serverId="apache-tomcat-9.0"/>
+  <module moduleId="org.eclipse.jst.jee.server:15_tienda_productos_combinada" serverId="Tomcat v9.0 Server at localhost"/>
+</modules>

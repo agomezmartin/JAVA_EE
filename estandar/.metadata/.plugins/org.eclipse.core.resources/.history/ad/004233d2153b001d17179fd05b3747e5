@@ -1,0 +1,18 @@
+package pruebas;
+
+import java.util.List;
+
+public class Test8 {
+
+	public static void main(String[] args) {
+		
+		List<String> nombres = List.of("cadena","luz","día","meteoro","bicicleta");
+		
+		// mostrar la lista de nombres ordenados alfabéticamente
+		nombres.stream()
+		.sorted()
+		.forEach(n -> System.out.println(n));
+
+	} // cierre MAIN
+
+}

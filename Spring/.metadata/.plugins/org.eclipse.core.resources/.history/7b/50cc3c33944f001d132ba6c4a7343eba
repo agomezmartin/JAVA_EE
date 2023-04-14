@@ -1,0 +1,18 @@
+package service;
+
+import java.util.List;
+
+import model.Contacto;
+
+public class ContactosServiceImpl {
+	
+	static List<Contacto> lista = ArrayList<Contacto>();
+	
+	public List<Contacto> contactosEdadesMax(int edad){
+		
+		return lista;
+	}
+	
+	
+
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Insert title here</title>
+<script type="text/javascript">
+	function validar(){
+		return validarUsuario()&&validarPwd()&&validarEmail()&&validarTelefono();
+	}
+
+	function validarUsuario(){
+		var nombre=document.getElementById("user").value;
+		if(user.length==0){
+			alert("El usuario no puede estar vac�o");
+			return false;
+		}
+		return true;
+	}
+
+	function validarPwd(){
+		var pwd=document.getElementById("pwd").value;
+		var pwd2=document.getElementById("pwd2").value;
+		if ((pwd.length==0) || (pwd!=pwd2)){
+			alert("La contrase�a no puede estar vac�a y ambas contrase�as deben coincidir ");
+			return false;
+		}
+		return true;
+	}
+
+	function validarEmail(){
+		var email=document.getElementById("email").value;
+		if ((email.search("@")==-1)||(email.search(".")==-1)){ // !email.match([@,.])
+			alert("El correo debe contener @ y . ");
+			return false;			
+		}
+		return true;
+	}
+
+	function validarTelefono(){
+		var tlf=document.getElementById("telefono").value;
+		if (isNaN(tlf) || ((tlf[0]!="9") && (tlf[0]!="6"))){ //!(tel.startsWidth["9"] || tel.startsWidth["6"]) 
+			alert("El tel�fono debe ser num�rico y empezar por 6 o 9");
+			return false;				
+		}
+		return true;
+	}
+</script>
+
+</head>
+<body>
+<div class="container">
+		<h1>Registro de usuario</h1>
+		<form action="registro" method="POST" >
+		   <div class="input-group" style="width:50%">
+		    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+			<input type="text" class="form-control" placeholder="Usuario" name="usuario" id="user">
+		  </div>	
+		   <div class="input-group" style="width:50%">
+		    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+			<input type="password" class="form-control" placeholder="Contraseña" name="pwd" id="pwd">
+		  </div>	
+		  <div class="input-group" style="width:50%">
+		    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+			<input type="password" class="form-control" placeholder="Repite Contraseña" name="pwd2" id="pwd2">
+		  </div>	
+		   <div class="input-group" style="width:50%">
+		    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+			<input type="text" class="form-control" placeholder="Email" name="email" id="email">
+		  </div>		
+		  <div class="input-group" style="width:50%">
+		    <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+			<input type="text" class="form-control" placeholder="Teléfono" name="telefono" id="telefono">
+		  </div>		    	
+			<input type="submit" class="btn btn-default btn-primary" style="width:50%" value="Aceptar">
+		</form>
+</div>
+	
+
+</body>
+</html>

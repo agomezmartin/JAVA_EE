@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function factorial(){
+		var n,r=1;
+		//recogemos el contenido del objeto num
+		n=document.getElementById("num").value;
+		for(var i=1;i<=n;i++){
+			r*=i;
+		}
+		//volcamos resultado en etiqueta de la página
+		document.getElementById("res").innerHTML="<b>El factorial de "+n+" es "+r+"</b>";
+		
+		
+	}
+
+</script>
+</head>
+<body>
+<center>
+	Introduce número:<input type="text" id="num"><br><br>
+	<input type="button" value="Factorial" onclick="factorial();">
+	<br><br>
+	<div id="res">
+	
+	</div>
+</center>
+</body>
+</html>

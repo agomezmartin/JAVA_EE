@@ -1,0 +1,9 @@
+package model;
+
+public class Pagina {
+	
+	private String direccion;
+	private String tematica;
+	private String descripcion;
+
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="23_Aplicacion_Libros_MVC"/>
+			<item value="21_Gestion_Contactos_MYSQL"/>
+			<item value="21_Gestión_Contactos_MYSQL"/>
+			<item value="20_Ejemplo_BD"/>
+			<item value="20_Alberto_Test"/>
+			<item value="17_carrito"/>
+			<item value="10_Buscador_productos"/>
+			<item value="08_validacion_FICHA"/>
+			<item value="08_Validación_ficha_ATRIBUTOS"/>
+			<item value="05_Deberes2"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="23_Aplicacion_Libros_MVC"/>
+			<item value="21_Gestion_Contactos_MYSQL"/>
+			<item value="21_Gestión_Contactos_MYSQL"/>
+			<item value="20_Ejemplo_BD"/>
+			<item value="20_Alberto_Test"/>
+			<item value="17_carrito"/>
+			<item value="10_Buscador_productos"/>
+			<item value="08_validacion_FICHA"/>
+			<item value="08_Validación_ficha_ATRIBUTOS"/>
+			<item value="05_Deberes2"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

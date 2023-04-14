@@ -1,0 +1,9 @@
+package service;
+import model.Pagina;
+public class BuscadorService {
+	
+	public interface BuscadorService {
+		List<Pagina> buscar(String tematica);
+	}
+
+}

@@ -1,0 +1,31 @@
+package config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
+
+@ComponentScan(basePackages = "controller")
+@EnableWebMvc
+@Configuration
+public class MvcConfig implements WebMvcConfigurer {
+	
+	//configuración del oBJETO que se encarga de la NAVEGACIÓN
+	@Bean
+	public InternalResourceViewResolver resolver() {
+		
+		InternalResourceViewResolver resolver=new InternalResourceViewResolver();
+		
+		resolver.setPrefix("/");
+		resolver.setSuffix(".jsp");
+		
+		return resolver;
+	}
+	
+	// configuración de NAVEGACIONES ESTÁTICAS
+	// ("ve a una página", "ve a otra página")
+	
+	
+
+}

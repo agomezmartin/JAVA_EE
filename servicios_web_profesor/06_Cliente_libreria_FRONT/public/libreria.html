@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	// carga la lista de temas
+	function cargarTemas(){
+		
+		var url="http://localhost:9000/"
+		$.get(url,function(data,status){
+			var opciones = "";
+			for(var t of data){
+				opciones+="<option value=´"+t+"´>"+t+"</option>";
+			}
+			$("#temas").html(opciones);
+		});
+	}
+	
+	
+	// genera una tabla con los ejemplares del tema seleccionado
+	function ejemplaresTema(){
+		
+		var url = "http://localhost:9000/ejemplares/" + $("temas").val();
+		var tabla = "<table border=´1´><tr><th>Código</th><th>Título</th><th>Precio</th></th>";
+		$.get(url, function(data, status){
+
+			for (var a of data){
+
+				tabla+="<tr><td>" + e.codigo + "</td><td>" + e.titulo + "</td></td>" + e.precio + "</td></tr>";
+				tabla+="</table>";
+				$("#ejemplates").html(tabla);
+
+			}
+			
+		});
+		
+	}
+
+
+</script>
+
+
+</head>
+<body onload="cargarTemas();">
+
+<!-- Esta página se va a encargar de INTERACCIONAR con el MICROSERVCIO llamado EJEMPLAR -->
+<center>
+
+	Seleccione Tema:
+	
+	<select id="temas">
+	</select>
+	
+	<div id="ejemplares">
+	
+	</div>
+	
+</center>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+package pruebas;
+
+import java.util.List;
+
+public class Test6 {
+
+	public static void main(String[] args) {
+		
+		List<Integer> edades = List.of(5,19,27,75,23,11,6,64,49);
+		
+		// mostrar la EDAD MEDIA de las personas MENORES DE EDAD
+		System.out.println( "la EDAD MEDIA de las personas MENORES DE EDAD es:");
+
+				edades.stream() // conversión de la LISTA a STREAM
+				
+				// métodos INTERMEDIOS
+				.filter(n -> n < 18) // filtra los MENORES de edad
+				.mapToInt(n -> n)
+
+				// método FINAL
+				.average()
+					)
+
+				///////////////////////////////////
+				
+				System.out.println("La suma de todos los caracteres de la lista es: ");
+				System.out.println(
+						
+						// calcular la suma de todos los caracteres de la lista
+						edades.stream() // conversión de la LISTA a STREAM
+						
+						.mapToInt(s -> s.length())
+						.sum()
+		
+						);
+
+	} // cierre MAIN
+
+}

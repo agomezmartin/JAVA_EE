@@ -1,0 +1,63 @@
+package controller;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+//importar el controlador de Spring
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import model.Pagina;
+import service.BuscadorService;
+
+//Anotar e importar el controlador de Spring
+@Controller
+
+public class TiendaController {
+	
+	// inyectar un OBJETO de la capa SERVICE
+	@Autowired
+	@Qualifier("ProductosServiceImpl") // se usa para seleccionar un objeto específico EN CASO de qe haya MÁS de un objeto
+	BuscadorService buscadorService;
+	
+	// Se establece la dirección 
+	@PostMapping(value="Buscador")
+	
+	// método para buscar
+	public String buscar(@RequestParam("tema") String tema, HttpServletRequest request) {
+		
+		List<Pagina> paginas = buscadorService.buscar(tema);
+		
+		if(!paginas.isEmpty()) {
+			
+			request.setAttribute("resultado", paginas);
+			return "listado"; // se devuelve LISTADO.JSP configurado con el McvConfig.java
+		
+		} else {
+		
+			return "sinpaginas"; // se devuelve LISTADO.JSP configurado con el McvConfig.java
+		}
+		
+	}
+
+	// Se establece la dirección 
+	@PostMapping(value="Alta")
+	
+	// método DAR DE ALTA
+	public String alta(
+			@RequestParam("direccion") String direccion,
+			@RequestParam("tema") String tema,
+			@RequestParam("descripcion") String descripcion) {
+		
+		Pagina pagina = new Pagina(direccion, tema, descripcion);
+		buscadorService.altaPagina(pagina);
+		
+		return "datos"; // se devuelve LISTADO.JSP configurado con el McvConfig.java
+
+	}
+
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var suma=0;
+		var datos;
+		datos=[];
+		datos.push(30);
+		datos.push(50);
+		datos[2]=100;
+		datos[3]=8;
+		alert(datos);
+		//recorrer array
+		/*for(var i=0;i<datos.length;i++){
+			suma+=datos[i];
+		}*/
+		for(var n of datos){
+			suma+=n;
+		}
+		
+		alert(suma);
+	</script>
+</body>
+</html>

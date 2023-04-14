@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function validar(){		
+		return validarUsuario()&&validarPwd()&&validarEmail()&&validarTelefono();
+	}
+	
+	function validarUsuario(){
+		var nombre=document.getElementById("usuario").value;
+		if(nombre.length==0){
+			alert("El usuario no puede estar vacío");
+			return false;
+		}
+		return true;
+	}
+	function validarPwd(){
+		var pwd=document.getElementById("pwd").value;
+		var pwd2=document.getElementById("pwd2").value;
+		if(pwd.length==0){
+			alert("La contraseña no puede estar vacío");
+			return false;
+		}else if(pwd!=pwd2){
+			alert("La contraseña no coincide");
+			return false;
+		}
+		return true;
+	}
+	function validarEmail(){
+		var email=document.getElementById("email").value;
+		if(!email.match("[@,.]")){
+		//if(email.search("@")==-1||email.search(".")==-1){
+			alert("Email debe contener @ y .");
+			return false;
+		}
+		return true;
+	}
+	function validarTelefono(){
+		var tel=document.getElementById("telefono").value;
+		if(isNaN(tel)||!(tel.startsWith("9")||tel.startsWith("6"))){
+			alert("El teléfono no es correcto");
+			return false;
+		}
+		return true;
+	}
+
+</script>
+</head>
+<!-- 
+Criterios de validación del formulario:
+
+- usuario y contraseña no pueden estar vacíos
+- contraseña y repetir contraseña deben coincidir
+- Email debe ser válido (contenga @ y .)
+- Telefono numérico y que comience por 6 o 9
+
+ -->
+<body>
+	<center>
+		<h1>Registro de usuario</h1>
+		<form action="Controller?option=doRegistrar" method="POST" onsubmit="return validar();">
+			Usuario:<input type="text" name="usuario" id="usuario"><br>
+			Contraseña:<input type="password" name="pwd" id="pwd"><br>
+			Repetir contraseña:<input type="password" name="pwd2" id="pwd2"><br>
+			Email:<input type="text" name="email" id="email"><br>
+			Teléfono:<input type="number" name="telefono" id="telefono"><br>
+			<input type="submit" value="Aceptar">
+		</form>
+	</center>
+	
+
+</body>
+</html>

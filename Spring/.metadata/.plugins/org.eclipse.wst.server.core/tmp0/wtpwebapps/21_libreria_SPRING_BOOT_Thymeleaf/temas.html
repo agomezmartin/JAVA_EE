@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>seleccion</title>
+<meta http-equiv="Content-Type" content="text/html;  charset=ISO-8859-1" >
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+
+	function registrarCarrito(){
+		var dir="registrarVenta";
+		$.get(dir,{},function(data,status){
+			$("#carrito").html("");				
+		});	
+	}
+
+	function vaciarCarrito(){
+		var dir="vaciarCarrito";
+		$.get(dir,{},function(data,status){
+			$("#carrito").html("");				
+		});	
+	}
+
+	function eliminarCarrito(p){
+		const formatterEuro = new Intl.NumberFormat('es-ES', {
+	        style: 'currency',
+	        currency: 'EUR'
+	     });
+		
+		var dir="eliminarCarrito";
+		$.get(dir,{"posicion":p},function(data,status){
+			var carrito="<h1>Carrito</h1><br><table class='table table-striped table-bordered'>"
+				+"<tr><th></th><th>Titulo</th><th>Autor</th><th>Precio</th></tr>";		
+			var pos=0;
+			for (var c of data){
+				carrito+="<tr><td><a href='#' onclick='eliminarCarrito("+pos+");'>Eliminar</a></td><td>"
+					+c.titulo+"</td><td>"+c.autor+"</td><td align='right'>"+formatterEuro.format(c.precio)+"</td></tr>";		
+				pos++;			
+			}		
+			carrito+="</table><br/><input type='button' class='btn btn-default btn-primary' style='width:25%' value='Comprar' onclick='registrarCarrito();'>"
+				+"<input type='button' class='btn btn-default btn-primary' style='width:25%' value='Vaciar' onclick='vaciarCarrito();'>";
+			$("#carrito").html(carrito);				
+			});			
+	}
+
+	function agregarCarrito(isbn){
+		const formatterEuro = new Intl.NumberFormat('es-ES', {
+	        style: 'currency',
+	        currency: 'EUR'
+	     });
+		var dir="agregarCarrito";
+		$.get(dir,{"isbn":isbn},function(data,status){
+			var carrito="<h1>Carrito</h1><br><table class='table table-striped table-bordered'>"
+				+"<tr><th></th><th>Título</th><th>Autor</th><th>Precio</th></tr>";		
+			var pos=0;
+			for (var c of data){
+				carrito+="<tr><td><a href='#' onclick='eliminarCarrito("+pos+");'>Eliminar</a></td><td>"
+					+c.titulo+"</td><td>"+c.autor+"</td><td align='right'>"+formatterEuro.format(c.precio)+"</td></tr>";
+				pos++;	
+			}		
+			carrito+="</table><br/><input type='button' class='btn btn-default btn-primary' style='width:25%'  value='Comprar' onclick='registrarCarrito();'>"
+				+"<input type='button' class='btn btn-default btn-primary' style='width:25%' value='Vaciar' onclick='vaciarCarrito();'>";
+			$("#carrito").html(carrito);				
+			});	
+	}
+
+	function mostrarLibros(){
+		const formatterEuro = new Intl.NumberFormat('es-ES', {
+	        style: 'currency',
+	        currency: 'EUR'
+	     });
+		
+		var dir="verLibros";
+		$.get(dir,{"idTema":$("#idTema").val()},function(data,status){			
+			var tabla="<h1>Libros</h1><table class='table table-striped table-bordered'>"
+					+"<tr><th></th><th>Título</th><th>Autor</th><th>Precio</th></tr>";	
+			for (var p of data){		
+				tabla+="<tr><td>"
+				+"<a href='#' onclick='agregarCarrito("+p.isbn+");'>Añadir Carrito</a></td><td>"
+				+p.titulo+"</td><td>"
+				+p.autor+"</td><td align='right'>"
+				+formatterEuro.format(p.precio)+"</td></tr>";			
+			}		
+			tabla+="</table>";
+			$("#libros").html(tabla);
+		});			
+	}
+</script>
+<body>
+
+<div class="container">
+            <h1>Seleccione Tema</h1>
+            <br/>
+           <div class="input-group" style="width:50%">
+		    <span class="input-group-addon"><i class="glyphicon glyphicon-book"></i></span>
+				<select name="idTema" id="idTema" class="input-lg" onchange="mostrarLibros()">
+				<option value="0">-Todos-</option>
+				<option th:each="t: ${temas}" th:value="${t.idTema}" th:text="${t.tema}"></option>							
+			</select>
+			</div>
+			<br/><br/>
+			<!---
+			<input type="button" class="btn btn-default btn-primary" style="width:25%" value="Ver Libros" onclick="mostrarLibros()"/>	
+			--->
+<div id="libros"></div>	
+<div id="carrito"></div>	
+		
+</div>
+
+</body>
+</html>

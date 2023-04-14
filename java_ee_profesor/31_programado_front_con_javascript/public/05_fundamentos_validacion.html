@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function validar(){		
+		return validarNombre()&&validarEdad()&&validarPwd();
+	}
+	
+	function validarNombre(){
+		var nombre=document.getElementById("nombre").value;
+		if(nombre.length==0){
+			alert("El nombre no puede estar vacío");
+			return false;
+		}
+		return true;
+	}
+	function validarEdad(){
+		var edad=document.getElementById("edad").value;
+		if(isNaN(edad)){
+			alert("La edad debe ser numérica");
+			return false;
+		}
+		return true;
+	}
+	function validarPwd(){
+		var pwd=document.getElementById("pwd").value;
+		if((pwd.length<6)||(!pwd.match("[A-Z]"))||(!pwd.match("[.,\,,-]"))){
+			alert("la contraseï¿½a debe tener al menos seis caracteres, mayï¿½scula y signo de puntuaciï¿½n");
+			return false;
+		}
+		return true;
+	}
+
+</script>
+</head>
+<body>
+<!-- 
+	nombre no puede estar vacï¿½o, edad numï¿½rico y contraseï¿½a al menos 6 caracteres
+	 y contener mayï¿½scula y algï¿½n signo de puntuaciï¿½n
+ -->
+	<center>
+		<form action="DirServlet" method="POST" onsubmit="return validar();">
+			Introduce nombre: <input type="text" id="nombre"><br><br>
+			Introduce edad: <input type="text" id="edad"><br><br>
+			Introduce contraseï¿½a: <input type="password" id="pwd"><br><br>
+			<input type="submit" value="Validar" >
+		</form>
+	</center>
+</body>
+</html>

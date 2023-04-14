@@ -1,0 +1,40 @@
+package controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+//importar el controlador de Spring
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import model.Pagina;
+import service.BuscadorService;
+
+//Anotar e importar el controlador de Spring
+@Controller
+public class BuscadorController {
+	
+	// inyectar un OBJETO de la capa SERVICE
+	@Autowired
+	BuscadorService buscadorService;
+	
+	// Se establece la dirección 
+	@PostMapping(value="Buscador")
+	
+	// método para buscar
+	public String buscar(@RequestParam("tema") String tema) {
+		
+		List<Pagina> paginas = buscadorService.buscar(tema);
+		
+		if(!paginas.isEmpty()) {
+
+			return "listado";
+		
+		} else {
+		
+			return "sinpaginas";
+		}
+		
+	}
+}

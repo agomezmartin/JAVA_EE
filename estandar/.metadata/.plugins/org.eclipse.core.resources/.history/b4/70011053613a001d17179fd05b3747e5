@@ -1,0 +1,26 @@
+package pruebas;
+
+import java.util.List;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		
+		List<Integer> nums = List.of(9,-4,11,3,2,-6,2,5,8,17,11,1,-5);
+		
+		// Imprimir los OCHO primeros NÚMEROS ÚNICOS
+		System.out.println( "Los OCHO primeros números ÚNICOS son: ");
+				
+				nums.stream() // conversión de la LISTA a STREAM
+				
+				// método INTERMEDIO
+				.distinct() // busca los números ÚNICOS
+				
+				.limit(8)
+				
+				// método FINAL
+				.forEach(n -> System.out.print(n + ", ")); // recorreo los números finales y los IMPRIME
+
+	} // cierre MAIN
+
+}

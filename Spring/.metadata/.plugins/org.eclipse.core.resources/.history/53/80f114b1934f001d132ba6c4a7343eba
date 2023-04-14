@@ -1,0 +1,16 @@
+package service;
+
+import java.util.List;
+
+public interface ContactosService {
+	
+	//devuelve lista de contactos cuya edad sea inferior al valor recibido
+	List<Contacto> contactosEdadesMax(int edad);
+	
+	//devuelve el contacto con el email indicado
+	Contacto contactoEmail(String email);
+	
+	//actualiza el contacto con el nuevo
+	void actualizaEmail(int idContacto, String email);
+
+}

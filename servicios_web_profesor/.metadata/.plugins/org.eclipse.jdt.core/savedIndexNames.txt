@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+/Users/albertogomez-martin/Documents/Core_Networks/curso_aplicaciones_empresariales_javaee_sep_2022/ejercicios/servicios_web_profesor/.metadata/.plugins/org.eclipse.jdt.core

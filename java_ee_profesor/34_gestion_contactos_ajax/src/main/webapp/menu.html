@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+	function buscarContactos(){
+		var dir="Controller";
+		$.get(dir,{"option":"doListado"},function(data,status){
+			var tabla="<table border='1'><tr><th>Nombre</th><th>Email</th><th>Edad</th></tr>";
+			for(var c of data){
+				tabla+="<tr><td>"+c.nombre+"</td><td>"+c.email+"</td><td>"+c.edad+"</td></tr>";
+			}
+			tabla+="</table>";
+			$("#contactos").html(tabla);
+			
+		});
+	}
+	function activarTemporizador(){
+		$("#listado").hide();
+		setInterval(function(){buscarContactos();},2000);
+	}
+
+</script>
+</head>
+<body>
+	<center>
+		<h2><a href="Controller?option=toAlta">Alta</a></h2>
+		<h2><a href="Controller?option=toEliminar">Eliminar</a></h2>
+		<h2><a id="listado" href="#" onclick="activarTemporizador();">Listado</a></h2>
+		
+		<br>
+		<div id="contactos">
+		
+		
+		</div>
+	</center>
+</body>
+</html>

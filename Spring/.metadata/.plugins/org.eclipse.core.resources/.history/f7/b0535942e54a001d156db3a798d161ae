@@ -1,0 +1,9 @@
+package service;
+
+public class BuscadorService {
+	
+	public interface BuscadorService {
+		List<Pagina> buscar(String tematica);
+	}
+
+}

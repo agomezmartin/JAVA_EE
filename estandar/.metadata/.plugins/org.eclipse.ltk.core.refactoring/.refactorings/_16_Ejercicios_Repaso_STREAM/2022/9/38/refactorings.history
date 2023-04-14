@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;EjercicioCiudades.java&apos; to &apos;_10_Ejercicios_Repaso/src/repaso&apos;&#x0A;- Original project: &apos;_16_Ejercicios_Repaso_STREAM&apos;&#x0A;- Destination element: &apos;_10_Ejercicios_Repaso/src/repaso&apos;&#x0A;- Original element: &apos;repaso.EjercicioCiudades.java&apos;" description="Copy compilation unit" destination="=_10_Ejercicios_Repaso/src=/optional=/true=/=/maven.pomderived=/true=/&lt;repaso" element1="/src=/optional=/true=/=/maven.pomderived=/true=/&lt;repaso{EjercicioCiudades.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1663917086340" units="1" version="1.0"/>
+</session>
